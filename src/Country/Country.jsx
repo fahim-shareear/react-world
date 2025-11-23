@@ -10,8 +10,8 @@ const Country = ({country}) => {
             <p>Population: {country.population.population}</p>
             <p>Continant: {country.continents.continents}</p>
             <p>Region: {country.region.region}</p>
-            <p>Area: {country.area.area}</p>
-            <p></p>
+            <p>Area: {country.area.area}{country.area.area > 300000 ? "Big Country" : " Small Country"}</p>
+            <button>Not Visited</button>
         </div>
     );
 };

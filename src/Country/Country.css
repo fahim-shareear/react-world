@@ -4,3 +4,12 @@
     padding: 20px;
     border-radius: 15px;
 }
+
+button{
+    border-radius: 10px;
+    background-color: rgb(57, 56, 56);
+    padding: 15px;
+    color: white;
+    font-size: 18px;
+    border: none;
+}
