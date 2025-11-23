@@ -8,7 +8,7 @@ const Countries = ({countryPromise}) => {
         <div>
             <h1>The total number of countries in the world is: {country.length}</h1>
             {
-                country.map(country => <Country country={country}></Country>)
+                country.map(country => <Country key={country.cca3.cca3} country={country}></Country>)
             }
         </div>
     );
