@@ -3,7 +3,6 @@ import { use } from "react";
 const Countries = ({countryPromise}) =>{
     const countryData = use(countryPromise);
     const country = countryData.countries;
-    console.log(country);
 
     return(
         <>
