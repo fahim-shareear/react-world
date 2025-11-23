@@ -3,16 +3,16 @@ import './App.css'
 import Countries from './Componants/Countries'
 
 
-const countriesPromise =  fetch('https://openapi.programming-hero.com/api/all#')
-.then(res => res.json())
+const countryPromise = fetch('https://openapi.programming-hero.com/api/all')
+  .then(res => res.json())
 
 
 function App() {
 
   return (
     <>
-        <Suspense fallback={<p>Nadir on the go loading........</p>}>
-          <Countries countriesPromise={countriesPromise}></Countries>
+        <Suspense fallback={<p>Nadir On The Go Is Loading</p>}>
+          <Countries countryPromise={countryPromise}></Countries>
         </Suspense>
     </>
   )
