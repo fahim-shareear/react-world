@@ -3,12 +3,12 @@ import Country from '../Country/Country';
 
 const Countries = ({countriesPromise}) => {
     const countryData = use(countriesPromise);
-    const countries = countryData.countries;
+    const country = countryData.countries;
     return (
         <div>
-            <h1>Total counries in the world: {countries.length}</h1>
+            <h1>Total counries in the world: {country.length}</h1>
             {
-                countries.map(country => <Country country={country}></Country>)
+                country.map(country => <Country key={country.ccn3} country={country}></Country>)
             }
         </div>
     );
