@@ -14,7 +14,7 @@ const Country = ({country}) => {
             <p>Continant: {country.continents.continents}</p>
             <p>Region: {country.region.region}</p>
             <p>Area: {country.area.area}{country.area.area > 300000 ? "Big Country" : " Small Country"}</p>
-            <button onClick={handleVisited}>Not Visited</button>
+            {/* <button onClick={handleVisited}>Not Visited</button> */}
         </div>
     );
 };
