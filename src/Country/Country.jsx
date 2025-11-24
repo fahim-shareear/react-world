@@ -1,10 +1,13 @@
 import React from 'react';
 import './Country.css'
+import { useState } from 'react';
 
 const Country = ({country}) => {
 
+    const [visited, setVisited] = useState(false);
+
     const handleVisited = () =>{
-        console.log("Visited");
+        setVisited(true);
     }
 
 
@@ -18,7 +21,7 @@ const Country = ({country}) => {
             <p>Capital: {country.capital.capital}</p>
             <p>Region: {country.region.region}</p>
             <p>Continent: {country.continents.continents}</p>
-            <button onClick={handleVisited}>Not Visited</button>
+            <button onClick={handleVisited}>{visited ? 'Visited' : 'Not Visited'} </button>
         </div>
     );
 };
