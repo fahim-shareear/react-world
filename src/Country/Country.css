@@ -5,6 +5,10 @@
     padding: 15px;
 }
 
+.country img{
+    border-radius: 15px;
+}
+
 
 button{
     padding: 10px;
