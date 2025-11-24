@@ -7,11 +7,15 @@ const Country = ({country}) => {
     const [visited, setVisited] = useState(false);
 
     const handleVisited = () =>{
-        if(visited){
-            setVisited(false)
-        }else{
-            setVisited(true)
-        }
+        //first logic:
+        // if(visited){
+        //     setVisited(false)
+        // }else{
+        //     setVisited(true)
+        // }
+
+        // Second method using the ternary operator:
+        setVisited(visited ? false : true);
     }
 
 
