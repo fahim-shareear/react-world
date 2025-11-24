@@ -23,7 +23,7 @@ const Country = ({country}) => {
 
 
     return (
-        <div className={`country ${visited && 'country-visited'}`}>
+        <div className={ `country ${visited && 'country_visited'}`}>
             <img src={country.flags.flags.png} alt={country.flags.flags.alt} />
             <h1>Name: {country.name.common}</h1>
             <h1>Official Name: {country.name.official}</h1>
