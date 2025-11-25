@@ -27,7 +27,7 @@ const Country = ({country}) => {
             <img src={country.flags.flags.png} alt={country.flags.flags.alt} />
             <h1>Name: {country.name.common}</h1>
             <h1>Official Name: {country.name.official}</h1>
-            <p>Population: {country.population.population}</p>
+            <p>Population: {country.population.population} {country.population.population > 10000000 ? ' Densely populated country!!!' : ' Well maintained country'}</p>
             <p>Area: {country.area.area} {country.area.area > 300000 ? 'Large Country' : 'Small Country'}</p>
             <p>Capital: {country.capital.capital}</p>
             <p>Region: {country.region.region}</p>
