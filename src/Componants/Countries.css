@@ -3,3 +3,18 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
+
+
+.visited-flags-container{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
+}
+
+
+.visited-flags-container img{
+    width: 150px;
+    height: 80px;
+    border-radius: 15px;
+    margin: 9px;
+}
