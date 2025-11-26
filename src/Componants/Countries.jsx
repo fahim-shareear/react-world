@@ -19,6 +19,7 @@ const Countries = ({countriesPromise}) =>{
         const newVisitedFlags = [...visitedFlags, flags];
         setVisitedFlags(newVisitedFlags);
     }
+    
     const countryData = use(countriesPromise);
     const country = countryData.countries;
     // console.log(country)
