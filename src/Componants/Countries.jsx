@@ -19,7 +19,7 @@ const Countries = ({countriesPromise}) =>{
         const newVisitedFlags = [...visitedFlags, flags];
         setVisitedFlags(newVisitedFlags);
     }
-    
+
     const countryData = use(countriesPromise);
     const country = countryData.countries;
     // console.log(country)
@@ -29,7 +29,7 @@ const Countries = ({countriesPromise}) =>{
         <>
             <div>
                 <h1>Total Countries in the world: {country.length}</h1>
-                <h2>Total visited countries: {visitedCountries.length}</h2>
+                <h2>My Visited countries: {visitedCountries.length}</h2>
                 <h3>Total visited flags: {visitedFlags.length}</h3>
                 <ol>
                     {
